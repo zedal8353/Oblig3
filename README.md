@@ -4,7 +4,9 @@
 ## OsloMet brukernavn: zedal8353
 ## GitHub brukernavn: zedal8353
 ## GitHub repo URL: https://github.com/zedal8353/Oblig3.git
+Se demonstrasjonsvideoen [her](https://youtu.be/KjmThCN1mk8).
 ## Fullt navn: Zeinab Daliri
+
 
 ## Kort beskrivelse av applikasjon:
 Jeg har gjennomført prosjektet ved å bruke HTML for å lage grunnleggende struktur, 
