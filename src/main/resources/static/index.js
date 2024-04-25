@@ -13,25 +13,34 @@ $(document).ready(function() {
         var epost = $('#epost').val().trim();
         var movie = $('#movie').val().trim();
 
+
         // Validate inputs
         if (!antall) {
-            displayErrorMessage('#antall-error', 'Må skrive noe inn i antall.');
+            $('#antall-error').text('Må skrive noe inn i antall.');
             return;
         }
+
+        // Valider fornavn
         if (!fornavn) {
-            displayErrorMessage('#fornavn-error', 'Må skrive noe inn i fornavnet.');
+            $('#fornavn-error').text('Må skrive noe inn i fornavnet.');
             return;
         }
+
+        // Valider etternavn
         if (!etternavn) {
-            displayErrorMessage('#etternavn-error', 'Må skrive noe inn i etternavnet.');
+            $('#etternavn-error').text('Må skrive noe inn i etternavnet.');
             return;
         }
+
+        // Valider telefonnr
         if (!validatePhoneNumber(telefonnr)) {
-            displayErrorMessage('#telefonnr-error', 'Ugyldig telefonnummer (8 siffer).');
+            $('#telefonnr-error').text('Ugyldig telefonnummer (8 siffer).');
             return;
         }
+
+        // Valider epost
         if (!validateEmail(epost)) {
-            displayErrorMessage('#epost-error', 'Ugyldig e-postadresse.');
+            $('#epost-error').text('Ugyldig e-postadresse.');
             return;
         }
 
