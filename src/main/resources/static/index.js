@@ -61,9 +61,10 @@ $(document).ready(function() {
     $('#deleteAllTickets').click(function() {
         deleteAllTickets();
     });
+
     function deleteAllTickets() {
         $.get("/slettAlle", function() {
-            $("#billettene").html("")
+            $("#billettene").html("");
         });
     }
 
@@ -122,4 +123,3 @@ $(document).ready(function() {
     // Initialize ticket list when the page loads
     get_mytickets();
 });
-
